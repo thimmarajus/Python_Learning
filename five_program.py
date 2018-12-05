@@ -1,4 +1,17 @@
-class MyNumbers:
+""" Built-in Modules in Python"""
+import platform
+
+x = dir(platform)
+print(x)
+#x = platform.system()
+#x = dir(platform)
+#print(x)
+#import mymodule as mx
+#
+#a = mx.person1["name"]
+#print(a)
+#mymodule.greeting("Srinivasa Thimmaraju")
+"""class MyNumbers:
   def __iter__(self):
     self.a = 1
     return self
@@ -15,7 +28,7 @@ myclass = MyNumbers()
 myiter = iter(myclass)
 
 for x in myiter:
-  print(x)
+  print(x)"""
 #class MyNumbers:
 #  def __iter__(self):
 #    self.a = 1
