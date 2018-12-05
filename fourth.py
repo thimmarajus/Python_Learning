@@ -1,8 +1,18 @@
-def my_function(x):
- return 5 * x
-print(my_function(3))
-print(my_function(5))
-print(my_function(9))
+def myfunc(n):
+ return lambda a : a*n
+mydoubler = myfunc(2)
+print(mydoubler(11))
+#x = lambda a,b : a * b
+#print(x(5,6))
+#x = lambda a,b,c : a+b+c
+#print(x(5,6,2))
+#x = lambda a : a + 10
+#print(x(5))
+#def my_function(x):
+# return 5 * x
+#print(my_function(3))
+#print(my_function(5))
+#print(my_function(9))
 #def my_function(country  = "Norway"):
 #    print("I am from\t" + country)
 #my_function()
