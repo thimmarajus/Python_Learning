@@ -1,8 +1,57 @@
-""" Built-in Modules in Python"""
-import platform
+"""JSON in Python"""
 
-x = dir(platform)
+import json
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+y = json.dumps(x)
+
+print(y)
+"""print(json.dumps({"name": "Jhon", "age": 30}))
+x = json.dumps(["apple","bananas"])
 print(x)
+print(json.dumps(("apple","banans")))
+print(json.dumps("hello"))
+print(json.dumps(42))
+print(json.dumps(31.76))
+print(json.dumps(True))
+print(json.dumps(False))
+print(json.dumps(None))"""
+"""# a Python Object (dict):
+x = {
+ "name": "Srinivasa Thimmaraju",
+ "age": 30,
+ "city": "New York"
+}
+
+# Convert into JSON:
+y = json.dumps(x)
+
+# the result is a JSON string:
+print(y)"""
+"""# Some JSON
+x = '{ "Name":"Srinivasa Thimmaraju", "age":30, "city":"New York"}'
+
+# Parse X:
+y = json.loads(x)
+
+#the result is a Python dictionary:
+#print(y)
+print(y["age"])"""
+""" Built-in Modules in Python"""
+"""import platform
+x = dir(platform)
+print(x)"""
 #x = platform.system()
 #x = dir(platform)
 #print(x)
