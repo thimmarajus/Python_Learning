@@ -1,6 +1,25 @@
 """JSON in Python"""
-
-import json
+import os
+os.rmdir("myfolder")
+#if os.path.exists("myfile.txt"):
+# os.remove("myfile.txt")
+#else:
+# print("The file doesn't exist")
+#os.mkdir("myfolder")
+#f = open("myfile.txt", "x")
+#f = open("demofile.txt","w")
+#f.write("Woops! I have deleted the content!")
+#print(x)
+#f = open("demofile.txt", "a")
+#f.write("Now the file has one more line!")
+#f = open("demofile.txt","r")
+#for x in f:
+# print(x)
+#print(f.readline())
+#print(f.readline())
+#print(f.read(5))
+#f = open("demofile1.txt", "x")
+"""import json
 
 x = {
   "name": "John",
@@ -16,7 +35,7 @@ x = {
 }
 y = json.dumps(x)
 
-print(y)
+print(y)"""
 """print(json.dumps({"name": "Jhon", "age": 30}))
 x = json.dumps(["apple","bananas"])
 print(x)
